@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b1ea209171.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Instagram Feed con Bootstrap</title>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand col-10" href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <button type="button" class="btn btn-primary bg-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Create a new post
+            </button>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Caption:</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Add the caption of your post here">
+                            </div>
+                            <i class="fa-solid fa-camera"></i> <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary bg-success">Publish</button>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-sharp fa-solid fa-gear"></i>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                  <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Log out</a></li>
+                </ul>
+              </li>
+             
+            </ul>
+
+          </div>
+        </div>
+    </nav>
+    <div class="container">
+        <ul class="nav nav-tabs justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#feed1"><i class="fa-solid fa-table-cells"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#feed2"><i class="fa-solid fa-square-full"></i></a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane fade" id="feed1">
+                <div class="row" style="margin: 10px;">
+                    <img class="col-4" src="https://i.pinimg.com/564x/98/16/a1/9816a15f2251755923d7d3bb65b7b47c.jpg" alt="">
+                    <img class="col-4" src="https://lamenteesmaravillosa.com/wp-content/uploads/2014/05/grupo-personas-trabajando.jpg" alt="">
+                    <img class="col-4" src="https://assets.vogue.com/photos/59778a099c4d37358f9855a6/master/pass/00-tout-dubrovnik-croatia-travel-guide.jpg" alt="">
+                </div>
+                <div class="row" style="margin: 10px;">
+                    <img class="col-4" src="https://radiojgm.uchile.cl/wp-content/uploads/2019/06/IMG_8838-1024x683.jpg" alt="">
+                    <img class="col-4" src="https://parisando.b-cdn.net/wp-content/uploads/sites/11/2022/03/la-torre-eiffel-de-paris.jpg" alt="">
+                    <img class="col-4" src="https://as.com/futbol/imagenes/2018/04/03/album/1522790583_576532_1522790702_album_grande.jpg" alt="">
+                </div>
+                <div class="row" style="margin: 10px;">
+                    <img class="col-4" src="https://thumbs.dreamstime.com/z/familia-en-el-parque-833403.jpg" alt="">
+                    <img class="col-4" src="https://www.computersciencedegreehub.com/wp-content/uploads/2016/02/what-is-coding-1024x683.jpg" alt="">
+                    <img class="col-4" src="https://cognosonline.com/wp-content/uploads/2020/04/Razones-por-las-que-las-plataformas-online-aumentan-la-motivacio%CC%81n-de-los-estudiantes-1200x900.png" alt="">
+                </div>
+            </div>
+            <div class="tab-pane fade" id="feed2">
+                <div class="page">
+                    <div class="post1">
+                        <div class="up">
+                            <div class="posthead">
+                                <h2>My crazy dog spark!</h2>
+                            </div>
+                            <div class="phead">
+                                <span>08/26</span>
+                            </div>
+                        </div>
+                        <div class="img"> <img src="https://i.pinimg.com/564x/98/16/a1/9816a15f2251755923d7d3bb65b7b47c.jpg" alt=""></div>
+                        <div>
+                        <p>This is an example of a very good photo that you can post on instagram</p>
+                        </div>
+                    </div>
+                    <div class="post1">
+                        <div class="up">
+                            <div class="posthead">
+                                <h2>The greatnes of Croatia</h2>
+                            </div>
+                            <div class="phead">
+                                <span>04/09</span>
+                            </div>
+                        </div>
+                        <div class="img"> <img src="https://assets.vogue.com/photos/59778a099c4d37358f9855a6/master/pass/00-tout-dubrovnik-croatia-travel-guide.jpg" alt=""></div>
+                        <div>
+                        <p>This is an example of a very good photo that you can post on instagram</p>
+                        </div>
+                    </div>
+                    <div class="post1">
+                        <div class="up">
+                            <div class="posthead">
+                                <h2>Amazing GOAL by Cristiano!</h2>
+                            </div>
+                            <div class="phead">
+                                <span>06/10</span>
+                            </div>
+                        </div>
+                        <div class="img"> <img src="https://as.com/futbol/imagenes/2018/04/03/album/1522790583_576532_1522790702_album_grande.jpg" alt=""></div>
+                        <div>
+                        <p>This is an example of a very good photo that you can post on instagram</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
